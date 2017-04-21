@@ -3,6 +3,7 @@ package org.cern.problem2.impl;
 import org.cern.problem2.ValueType;
 
 /**
+ * Implementation of a SpreadSheet
  * Created by Mayank on 4/21/2017.
  */
 public class SpreadsheetImpl {

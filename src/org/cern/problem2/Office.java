@@ -3,6 +3,7 @@ package org.cern.problem2;
 import org.cern.problem2.impl.SpreadsheetImpl;
 
 /**
+ * Main class for instantiating initialized ${@link SpreadsheetImpl}
  * Created by Mayank on 4/21/2017.
  */
 public class Office{

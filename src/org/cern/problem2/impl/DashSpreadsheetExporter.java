@@ -3,6 +3,7 @@ package org.cern.problem2.impl;
 import org.cern.problem2.SheetExporter;
 
 /**
+ * Exports sheet data of ${@link SpreadsheetImpl} in dashed format
  * Created by Mayank on 4/21/2017.
  */
 public class DashSpreadsheetExporter implements SheetExporter{

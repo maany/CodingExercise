@@ -22,6 +22,7 @@ public class CollectionUtilChildTest {
      **/
     @Test
     public void findDuplicatedElementsTest(){
+        //Check for List<String>
         List<String> src = new ArrayList<String>();
         String[] srcArray = {"b", "a", "c", "c", "e", "a", "c", "d", "c", "d"};
         src.addAll(Arrays.asList(srcArray));
@@ -30,5 +31,16 @@ public class CollectionUtilChildTest {
         List<String> ans = new ArrayList<String>();
         ans.addAll(Arrays.asList(ansArray));
         Assert.assertEquals(duplicates,ans);
+
+        // Check for List<Integer>
+        List<Integer> srcInt = new ArrayList<Integer>();
+        Integer[] srcIntArray = {1,2,2,3,2,4,1,1,3};
+        src.addAll(Arrays.asList(srcArray));
+        List<Integer> duplicatesInt = collectionUtilChild.findDuplicatedElements(srcInt);
+        Integer[] ansIntArray = {1,2,3};
+        List<Integer> ansInt = new ArrayList<Integer>();
+        ansInt.addAll(Arrays.asList(ansIntArray));
+        Assert.assertEquals(duplicates,ans);
     }
+
 }
